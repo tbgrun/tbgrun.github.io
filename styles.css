@@ -11,23 +11,24 @@ body {
     background-color: #c9e7ff;
 }
 
-/* Container with flexbox to align aside and main content */
-.container {
-    display: flex;
-    padding: 20px;
-}
-
-
-
 /* Profile Aside style */
 .profile-aside {
     padding: 20px;
     width: 20%;
     margin-right: 20px;
+    display: flex; /* Use flexbox to center the image */
+    align-items: center; /* Vertically center image */
+    justify-content: center; /* Horizontally center image */
+}
+
+/* Make the image scale with the width of the aside */
+.profile-aside img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Main Content style */
-.main-content {
+section {
     padding: 20px;
     flex: 1;
 }
@@ -66,16 +67,13 @@ body {
     background-color: #575757; /* Slightly lighter background on hover */
 }
 
-
-
-
 /* Responsive behavior */
 @media (max-width: 768px) {
-    .container {
+    .profile-container {
         flex-direction: column;
     }
 
-    .profile-aside, .main-content {
+    .profile-aside, section {
         width: 100%; /* Full width on small screens */
         margin-right: 0; /* Remove right margin in column layout */
     }
