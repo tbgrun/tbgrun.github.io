@@ -28,7 +28,7 @@ body {
 
 /* Media image, responsive */
 .media-image {
-    max-width: 10%; /* Set maximum width to 10% */
+    max-width: 15%; /* Set maximum width to 10% */
     height: auto;   /* Maintain aspect ratio */
     display: flex; /* Alignment */
     }
