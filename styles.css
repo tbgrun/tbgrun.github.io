@@ -28,9 +28,9 @@ body {
 
 /* Main Content style */
 section {
+    margin: auto;
     padding: 0%;
     flex: 1;
-    justify-content: center; /* Horizontally center text */
 }
 
 /* Navigation bar container */
