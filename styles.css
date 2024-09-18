@@ -10,6 +10,9 @@ body {
     display: flex;
     padding: 1%;
     background-color: #c9e7ff;
+    max-width: 100%; /* Prevent container from exceeding viewport width */
+    box-sizing: border-box; /* Ensure padding is included in the element's width/height */
+    overflow: hidden; /* Prevent content from overflowing */
 }
 
 /* Profile Aside style */
@@ -33,6 +36,8 @@ section {
     flex: 1;
     flex-shrink: 0; /* Prevent shrinking */
     word-wrap: break-word; /* Handle long text on smaller screens */
+    max-width: 100%; /* Ensure content does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 /* Navigation bar container */
@@ -72,6 +77,8 @@ section {
 /* Container with flexbox */
 .container {
     padding: 5%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't exceed container width */
 }
 
 /* Footer style */
@@ -90,12 +97,14 @@ section {
     .profile-container {
         flex-direction: column;
         padding: 2%; /* Adjust padding for small screens */
+        max-width: 100%; /* Ensure it fits within the screen */
     }
 
     .profile-aside, section {
         width: 100%; /* Full width on small screens */
         margin-right: 0; /* Remove right margin in column layout */
         padding: 5%; /* Add some padding to ensure readability */
+        box-sizing: border-box; /* Ensure padding fits within 100% width */
     }
 
     section {
