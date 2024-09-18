@@ -14,7 +14,7 @@ body {
 /* Profile Inlay Container with flexbox to align aside and main content */
 .inlay-container {
     display: inline-flex;
-    padding: 5%;
+    padding: 0%;
 }
 
 /* Profile Aside style */
