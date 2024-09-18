@@ -7,15 +7,14 @@ body {
 /* Profile Container with flexbox to align aside and main content */
 .profile-container {
     display: flex;
-    padding: 20px;
+    padding: 10%;
     background-color: #c9e7ff;
 }
 
 /* Profile Aside style */
 .profile-aside {
-    padding: 20px;
+    padding: 10%;
     width: 20%;
-    margin-right: 20px;
     display: flex; /* Use flexbox to center the image */
     align-items: center; /* Vertically center image */
     justify-content: center; /* Horizontally center image */
@@ -29,7 +28,7 @@ body {
 
 /* Main Content style */
 section {
-    padding: 20px;
+    padding: 10%;
     flex: 1;
 }
 
@@ -69,7 +68,7 @@ section {
 
 /* Container with flexbox to align aside and main content */
 .container {
-    padding: 50px;
+    padding: 20%;
 }
 
 /* Footer style */
