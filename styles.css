@@ -1,9 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Profile Container with flexbox to align aside and main content */
+.profile-container {
+    margin: auto;
+    display: flex;
+    padding: 1%;
+    background-color: #c9e7ff;
+}
+
+/* Profile Aside style */
+.profile-aside {
+    padding: .5%;
+    width: 20%;
+    display: flex; /* Use flexbox to center the image */
+    align-items: center; /* Vertically center image */
+    justify-content: center; /* Horizontally center image */
+}
+
+/* Profile image, responsive */
+.profile-aside img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Main Content style */
 section {
     padding: 0% 5%;
     flex: 1;
     flex-shrink: 0; /* Prevent shrinking */
     word-wrap: break-word; /* Handle long text on smaller screens */
+}
+
+/* Navigation bar container */
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    overflow: hidden; /* Clear floats */
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+}
+
+/* Navigation link items */
+.nav-links li {
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation link styles */
+.nav-links a {
+    display: block;
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding for clickable area */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Bold text */
+}
+
+/* Change background color on hover */
+.nav-links a:hover {
+    background-color: #575757; /* Slightly lighter background on hover */
+}
+
+/* Container with flexbox */
+.container {
+    padding: 5%;
+}
+
+/* Footer style */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive behavior */
@@ -20,6 +99,6 @@ section {
     }
 
     section {
-        text-align: justify; /* Optional: This can improve readability */
+        text-align: justify; /* Optional: Improve readability */
     }
 }
