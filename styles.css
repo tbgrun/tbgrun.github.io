@@ -69,7 +69,7 @@ section {
 
 /* Container with flexbox to align aside and main content */
 .container {
-    padding: 100px;
+    padding: 50px;
 }
 
 /* Responsive behavior */
