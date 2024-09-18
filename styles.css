@@ -11,12 +11,6 @@ body {
     background-color: #c9e7ff;
 }
 
-/* Profile Inlay Container with flexbox to align aside and main content */
-.inlay-container {
-    display: inline-flex;
-    padding: 0%;
-}
-
 /* Profile Aside style */
 .profile-aside {
     padding: 0%;
