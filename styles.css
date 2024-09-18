@@ -20,10 +20,18 @@ body {
     justify-content: left; /* Horizontally center image */
 }
 
-/* Make the image scale with the width of the aside */
+/* Profile image, responsive */
 .profile-aside img {
     max-width: 100%; /* Make image responsive */
     height: auto; /* Maintain aspect ratio */
+}
+
+/* Media image, responsive */
+.media-image {
+    max-width: 10%; /* Set maximum width to 10% */
+    height: auto;   /* Maintain aspect ratio */
+    display: block; /* Ensures it's block-level to avoid alignment issues */
+    margin: 10px 0; /* Add margin for spacing */
 }
 
 /* Main Content style */
