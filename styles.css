@@ -67,6 +67,13 @@ section {
     background-color: #575757; /* Slightly lighter background on hover */
 }
 
+/* Container with flexbox to align aside and main content */
+.container {
+    display: flex;
+    padding: 50px;
+    background-color: #c9e7ff;
+}
+
 /* Responsive behavior */
 @media (max-width: 768px) {
     .profile-container {
