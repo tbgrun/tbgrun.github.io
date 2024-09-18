@@ -91,6 +91,6 @@ section {
 
     .profile-aside, section {
         width: 100%; /* Full width on small screens */
-       /* margin-right: 0;  Remove right margin in column layout */
+        margin-right: 5; /* Remove right margin in column layout */
     }
 }
