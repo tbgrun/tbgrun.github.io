@@ -30,7 +30,7 @@ body {
 .media-image {
     max-width: 15%; /* Set maximum width to 10% */
     height: auto;   /* Maintain aspect ratio */
-    display: flex; /* Alignment */
+    display: flex-start; /* Alignment */
     }
 
 /* Main Content style */
