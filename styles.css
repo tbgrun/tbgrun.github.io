@@ -6,6 +6,7 @@ body {
 
 /* Profile Container with flexbox to align aside and main content */
 .profile-container {
+    margin: auto;
     display: flex;
     padding: 1%;
     background-color: #c9e7ff;
@@ -28,7 +29,6 @@ body {
 
 /* Main Content style */
 section {
-    margin: auto;
     padding: 0%;
     flex: 1;
 }
