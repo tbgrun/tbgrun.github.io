@@ -30,9 +30,8 @@ body {
 .media-image {
     max-width: 10%; /* Set maximum width to 10% */
     height: auto;   /* Maintain aspect ratio */
-    display: block; /* Ensures it's block-level to avoid alignment issues */
-    margin: 10px 0; /* Add margin for spacing */
-}
+    display: flex; /* Alignment */
+    }
 
 /* Main Content style */
 section {
