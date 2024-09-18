@@ -13,7 +13,7 @@ body {
 
 /* Profile Aside style */
 .profile-aside {
-    padding: 0%;
+    padding: 5%;
     width: 20%;
     display: flex; /* Use flexbox to center the image */
     align-items: center; /* Vertically center image */
