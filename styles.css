@@ -7,7 +7,7 @@ body {
 /* Profile Container with flexbox to align aside and main content */
 .profile-container {
     display: flex;
-    padding: 5%;
+    padding: 1%;
     background-color: #c9e7ff;
 }
 
