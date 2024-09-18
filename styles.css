@@ -7,13 +7,13 @@ body {
 /* Profile Container with flexbox to align aside and main content */
 .profile-container {
     display: flex;
-    padding: 1%;
+    padding: 5%;
     background-color: #c9e7ff;
 }
 
 /* Profile Aside style */
 .profile-aside {
-    padding: 1%;
+    padding: 5%;
     width: 20%;
     display: flex; /* Use flexbox to center the image */
     align-items: center; /* Vertically center image */
