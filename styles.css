@@ -13,7 +13,7 @@ body {
 
 /* Profile Aside style */
 .profile-aside {
-    padding: 5%;
+    padding: 0%;
     width: 20%;
     display: flex; /* Use flexbox to center the image */
     align-items: center; /* Vertically center image */
@@ -22,7 +22,7 @@ body {
 
 /* Make the image scale with the width of the aside */
 .profile-aside img {
-    max-width: 90%; /* Make image responsive */
+    max-width: 100%; /* Make image responsive */
     height: auto; /* Maintain aspect ratio */
 }
 
