@@ -8,7 +8,7 @@ body {
 .profile-container {
     margin: auto;
     display: flex;
-    padding: 1%;
+    padding: 1% 5%;
     background-color: #c9e7ff;
 }
 
