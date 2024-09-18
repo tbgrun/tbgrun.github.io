@@ -17,7 +17,7 @@ body {
     width: 20%;
     display: flex; /* Use flexbox to center the image */
     align-items: center; /* Vertically center image */
-    justify-content: center; /* Horizontally center image */
+    justify-content: left; /* Horizontally center image */
 }
 
 /* Make the image scale with the width of the aside */
