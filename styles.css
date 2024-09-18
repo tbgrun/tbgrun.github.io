@@ -13,7 +13,7 @@ body {
 
 /* Profile Aside style */
 .profile-aside {
-    padding: 0%;
+    padding: 5%;
     width: 20%;
     display: flex; /* Use flexbox to center the image */
     align-items: center; /* Vertically center image */
@@ -25,13 +25,6 @@ body {
     max-width: 100%; /* Make image responsive */
     height: auto; /* Maintain aspect ratio */
 }
-
-/* Media image, responsive */
-.media-image {
-    max-width: 15%; /* Set maximum width to 10% */
-    height: auto;   /* Maintain aspect ratio */
-    display: flex-start; /* Alignment */
-    }
 
 /* Main Content style */
 section {
