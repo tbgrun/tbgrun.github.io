@@ -72,6 +72,17 @@ section {
     padding: 50px;
 }
 
+/* Footer style */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Responsive behavior */
 @media (max-width: 768px) {
     .profile-container {
