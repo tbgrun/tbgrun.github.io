@@ -44,6 +44,7 @@ section {
 .navbar {
     background-color: #333; /* Dark background for the navbar */
     overflow: hidden; /* Clear floats */
+    width: 100%; /* Ensure the navbar takes up the full width */
 }
 
 /* Navigation links */
@@ -52,6 +53,8 @@ section {
     margin: 0;
     padding: 0;
     display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space links evenly */
+    flex-wrap: wrap; /* Allow wrapping of links on smaller screens */
 }
 
 /* Navigation link items */
@@ -67,6 +70,7 @@ section {
     padding: 14px 20px; /* Padding for clickable area */
     text-decoration: none; /* Remove underline */
     font-weight: 600; /* Bold text */
+    flex-grow: 1; /* Make links stretch evenly */
 }
 
 /* Change background color on hover */
@@ -109,5 +113,15 @@ section {
 
     section {
         text-align: justify; /* Optional: Improve readability */
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+    }
+    .nav-links a {
+        padding: 10px; /* Reduce padding for smaller screens */
     }
 }
