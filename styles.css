@@ -86,6 +86,11 @@ section {
     box-sizing: border-box;
 }
 
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
 /* Footer style */
 .footer {
     background-color: #333;
