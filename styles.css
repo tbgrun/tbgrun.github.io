@@ -88,7 +88,7 @@ section {
 
 /* Solid border */
 hr.solid {
-  border-top: 3px solid #bbb;
+  border-top: 1px solid #333;
 }
 
 /* Footer style */
