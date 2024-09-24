@@ -79,6 +79,18 @@ section {
     background-color: #575757;
 }
 
+/* link style */
+a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+/* hover effect for links */
+a:hover {
+    text-decoration: underline;
+    color: #2d4373;
+}
+
 /* Container with flexbox */
 .container {
     padding: 5%;
