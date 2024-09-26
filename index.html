@@ -59,7 +59,45 @@
     <article>
         <h1 id="contact">Contact</h1>
     </article>
-</div>    
+ 
+
+<!-- TEST HERE -->
+
+<article>
+    <h1 id="certifications">Certifications</h1>
+        <p><a href="https://www.credly.com/users/tobias-b-grun" target="blank">Credly</a> Digital Credentials</p> 
+            <ul>
+                <li><a href="assets/certifications/Grun_IBM_Machine_Learning_Certificate.pdf" id="openModal" target="_blank">IBM Machine Learning Professional Certificate</a></li>
+            </ul>
+
+    <!-- Modal definition -->
+    <div id="pdfModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe src="assets/certifications/Grun_DISY_CADENZA.pdf" width="100%" height="600px"></iframe>
+    </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("pdfModal");
+        var link = document.getElementById("openModal");
+        var span = document.getElementsByClassName("close")[0];
+        link.onclick = function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
+    </script>
+</article>
+</div>
+    
 </body>
 
 <footer class="footer">
