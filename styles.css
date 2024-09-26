@@ -120,14 +120,14 @@ hr.solid {
 .modal-content {
   margin: 10% auto;
   padding: 20px;
-  width: 40%;
+  width: auto;
   background-color: white;
   text-align: center;
 }
 
 /* Image inside the modal */
 .modal-content img {
-  width: 40%; /* Set image to 40% of original size */
+  width: 50%; /* Set image to 40% of original size */
   height: auto; /* Maintain aspect ratio */
 }
 
