@@ -120,8 +120,15 @@ hr.solid {
 .modal-content {
   margin: 10% auto;
   padding: 20px;
-  width: 80%;
+  width: auto;
   background-color: white;
+  text-align: center;
+}
+
+/* Image inside the modal */
+.modal-content img {
+  width: 40%; /* Set image to 40% of original size */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Close button */
