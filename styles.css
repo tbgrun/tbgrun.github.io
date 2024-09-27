@@ -110,8 +110,8 @@ hr.solid {
   z-index: 1; 
   left: 0;
   top: 0;
-  width: 50%; /* was 100 */
-  height: 50%; /* was 100 */
+  width: 100%; /* was 100 */
+  height: 100%; /* was 100 */
   overflow: hidden; 
   background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
 }
@@ -121,8 +121,8 @@ hr.solid {
   position: relative;
   margin: auto;
   padding: 1%;
-  max-width: 90%;
-  background-color: white;
+  max-width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -130,7 +130,7 @@ hr.solid {
 
 /* Image inside the modal */
 .modal-content img {
-  width: 100%; /* Set image to X% of original size */
+  width: 90%;
   height: auto; /* Maintain aspect ratio */
 }
 
