@@ -4,6 +4,24 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+    color: #333; /* Dark color */
+    margin-bottom: 30px; /* Add spacing below */
+    text-align: left; /* Align to the left */
+    font-weight: bold; /* Bold text */
+}
+
+h2 {
+    font-size: 2em; /* Adjust size as needed */
+    color: #333; /* Dark color for readability */
+    margin-bottom: 20px; /* Add spacing below */
+    text-align: left; /* Align to the left */
+    font-weight: bold; /* Bold text */
+    border-bottom: 2px solid #c9e7ff; /* Light border to match background color */
+    padding-bottom: 10px; /* Spacing between text and border */
+}
+
 /* Profile container */
 .profile-container {
     margin: auto;
