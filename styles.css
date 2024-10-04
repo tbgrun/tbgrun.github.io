@@ -99,6 +99,7 @@ section {
 
 /* Change background color on hover */
 .nav-links a:hover {
+    color: #c9e7ff;	
     background-color: #575757;
 }
 
