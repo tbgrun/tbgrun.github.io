@@ -77,7 +77,7 @@ section {
     margin: 0;
     padding: 0;
     display: flex; /*  horizontal alignment */
-    justify-content: space-around; /* space links evenly */
+    justify-content: space-between; /* space links evenly */
     flex-wrap: wrap; /* wrapping of links on smaller screens */
 }
 
