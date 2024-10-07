@@ -77,13 +77,14 @@ section {
     margin: 0;
     padding: 0;
     display: flex; /*  horizontal alignment */
-    justify-content: space-between; /* space links evenly */
+    justify-content: space-around; /* space links evenly */
     flex-wrap: wrap; /* wrapping of links on smaller screens */
 }
 
 /* Navigation link items */
 .nav-links li {
     margin: 0;
+    flex-grow: 1;
 }
 
 /* Navigation link styles */
