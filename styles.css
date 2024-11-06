@@ -40,6 +40,8 @@ h3 {
 
 .publication {
     list-style-position: outside;   /* creates hanging bullets */
+    list-style-type: none;   /* removes bullet points */
+    padding-left: 0;         /* removes default padding */
 }
 
 .publication li {
