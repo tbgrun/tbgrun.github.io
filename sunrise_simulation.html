@@ -49,7 +49,17 @@
 
     <article>
         <h1 id="hardware_setup">Hardware Setup</h1>    
-        <p>text.</p>
+        <p>The hardware configuration seemed straightforward at first glance: the Raspberry Pi has a set of pins that allow it to send and receive signals. Naturally, one might 
+		think all it takes is to connect the red, green, and blue channels to the Raspberry Pi’s pins and let the Python code control the LED.
+	<p>However, as with most things in life, there’s more to it. First, it’s important to understand how the LED strip works. Unlike light bulbs that can be dimmed by 
+		regulating current, LEDs are quickly turned on and off. The longer the LED is off, the dimmer it appears. This effect is called Pulse Width Modulation (PWM). 
+		Therefore, it’s essential to find the pins on the Raspberry Pi that natively support PWM for this setup.</p>
+	<p>Once you have that figured out, the next question is how much power the Raspberry Pi's pins can supply, and whether that’s enough for a power-hungry LED strip. 
+		The answer, according to most sources, is no. This is where the setup enters a completely different realm beyond simple scripting and wiring. We now need 
+		MOSFETs, a breadboard, and other components. Fortunately, there are experts who have already figured out what parts are needed, how to calculate their properties, 
+		and even compiled shopping lists with links to purchase them.</p>
+	<p>For everything hardware-related, I recommend checking out an online source like <a href=” https://dordnung.de/raspberrypi-ledstrip/” target=”_blank”>David Ordnung’s</a> blog, 
+		which covers how to set up an LED strip with a Raspberry Pi.</p>
     </article>
 
     <article>	
