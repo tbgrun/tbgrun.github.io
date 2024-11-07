@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="tbgrun, tobias b. grun, data science, data analytics, data engineering, statistics">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/images/icon.ico" alt="icon" type="image/x-icon"/>
+</head>
+
+<body>
+<div class="profile-container">
+   <aside class="profile-aside">
+       <img src="assets/images/sites/biomimetic_research/ .png" alt="Biomimetics" class="profile-image" id="profile"> 
+   </aside>
+  <section>
+     <h1 id="introduction">Sunrise Simulation</h1>
+     <p>This project is a custom sunrise simulation using a Raspberry Pi 4B and an RGB LED light strip. It mimics a natural sunrise by gradually increasing 
+       the brightness and adjusting the LED colors through precise control of each channel using the pigpio library and MOSFETs. Beginning with dark red, the 
+       light transitions to full-spectrum daylight over 30 minutes. Once full brightness and daylight color are reached, the system maintains this illumination 
+       for one hour, offering a consistent and gentle wake-up experience.</p>
+  </section>
+</div>
+    
+<nav class="navbar">
+    <ul class="nav-links">
+            <li><a href="#profile">Introduction</a></li>
+	    <li><a href="#overview">Overview</a></li>
+	    <li><a href="#data_aquisition">Data Aquisition</a></li>
+            <li><a href="#data_analyses">Data Analyses</a></li>
+            <li><a href="#demonstrators">Demonstrators</a></li>
+	    <li><a href="#publications">Publications</a></li>
+    </ul>
+</nav>  
+
+<div class="container">
+    <article>
+	<h1 id="overview">Overview</h1>    
+        <p>text.</p>
+    </article>
+
+    <article>	
+    <h1 id="data_aquisition">Python Code</h1>
+	  <pre><code>
+      import pigpio
+      import time
+
+      # setup GPIO pins
+      red_pin = 13
+      green_pin = 19
+      blue_pin = 26
+
+      # maximum RGB brightness
+      max_brightness = 255
+
+      # set colors
+      dark_orange = (255, 69, 0)  # RGB values for dark orange
+      daylight = (255, 255, 255)  # RGB values for daylight
+
+      # simulation times in seconds
+      total_transition_time = 1800  # 30 minutes
+      full_brightness_time = 3600  # 1 hour
+
+      def setup():
+          pi = pigpio.pi()
+          if not pi.connected:
+              raise RuntimeError("Failed to connect to pigpio daemon")
+    
+          # initialize PWM cycles to 0% brightness
+          pi.set_PWM_dutycycle(red_pin, 0)
+          pi.set_PWM_dutycycle(green_pin, 0)
+          pi.set_PWM_dutycycle(blue_pin, 0)
+
+          return pi
+
+    def interpolate_color(start_color, end_color, progress):
+        """Calculate intermediate color based on progress (0 to 1)."""
+        return (
+            int(start_color[0] + (end_color[0] - start_color[0]) * progress),
+            int(start_color[1] + (end_color[1] - start_color[1]) * progress),
+            int(start_color[2] + (end_color[2] - start_color[2]) * progress)
+        )
+
+    def simulate_light_transition(pi):
+        # gradually transition from dark orange to daylight over 30 minutes
+        start_time = time.time()
+        while time.time() - start_time < total_transition_time:
+            elapsed_time = time.time() - start_time
+            progress = elapsed_time / total_transition_time
+
+            # calculate RGB values based on progress
+            red, green, blue = interpolate_color(dark_orange, daylight, progress)
+
+            # gradually Transition from 0 to 100% brightness
+            pi.set_PWM_dutycycle(red_pin, max(0, min(max_brightness, red)))
+            pi.set_PWM_dutycycle(green_pin, max(0, min(max_brightness, green)))
+            pi.set_PWM_dutycycle(blue_pin, max(0, min(max_brightness, blue)))
+
+            time.sleep(1)
+
+    def main():
+        pi = setup()
+
+        try:
+            # simulate light transition
+            simulate_light_transition(pi)
+
+            # keep light on at full brightness for 1 hour
+            pi.set_PWM_dutycycle(red_pin, daylight[0])
+            pi.set_PWM_dutycycle(green_pin, daylight[1])
+            pi.set_PWM_dutycycle(blue_pin, daylight[2])
+            time.sleep(full_brightness_time)
+
+        finally:
+            # cleanup
+            pi.set_PWM_dutycycle(red_pin, 0)
+            pi.set_PWM_dutycycle(green_pin, 0)
+            pi.set_PWM_dutycycle(blue_pin, 0)
+            pi.stop()
+
+    if __name__ == "__main__":
+        main()
+  
+    </code></pre>
+    </article>	
+
+</div>
+    
+</body>
+
+<footer class="footer">
+    <p>© 2024 by Tobias B. Grun</p>
+</footer>
+</html>
