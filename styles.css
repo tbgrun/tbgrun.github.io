@@ -52,7 +52,7 @@ h3 {
     pre {
       background-color: #f0f8ff;
       padding: 10px;
-      border-radius: 5px; /* rounded corners */
+      border-radius: 10px; /* rounded corners */
       overflow-x: auto; /* horizontal scrolling */
     }
     code {
