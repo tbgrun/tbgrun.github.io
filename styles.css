@@ -49,16 +49,19 @@ h3 {
 }
 
  /* code block */
-    pre {
-      background-color: #f0f8ff;
-      padding: 10px;
-      border-radius: 10px; /* rounded corners */
-      overflow-x: auto; /* horizontal scrolling */
-    }
-    code {
-      font-family: Consolas, "Courier New", monospace;
-      color: #333;
-    }
+pre {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px; /* rounded corners */
+    overflow-x: auto; /* horizontal scrolling */
+}
+code {
+    font-family: Consolas, "Courier New", monospace;
+    color: #333;
+}
+.code-container {
+  position: relative;
+}
 
 /* Profile container */
 .profile-container {
