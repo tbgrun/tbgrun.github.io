@@ -31,6 +31,7 @@
 	    <li><a href="#background">Background</a></li>
 	    <li><a href="#hardware_setup">Hardware Setup</a></li>
             <li><a href="#python_code">Python Code</a></li>
+	    <li><a href="#schedule_execution">Schedule Execution</a></li>
     </ul>
 </nav>  
 
@@ -149,6 +150,17 @@ if __name__ == "__main__":
     </code></pre>
     </div>		  
     </article>	
+
+    <article>
+    <h1 id="schedule_execution">Schedule Execution</h1>    
+    <p>With the working script, you now only need to tell your Raspberry Pi to run the script on your dream schedule, e.g., every Saturday and Sunday at 10 AM. I use cron to achieve this:</p>
+    <div class="code-container">
+	<pre><code>
+crontab -e
+0 10 * * 6,7 /usr/bin/python3 /scripts/sunrise_simulation.py
+        </code></pre>
+    </div>
+    </article>
 	
 </div>
     
