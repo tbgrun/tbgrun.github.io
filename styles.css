@@ -47,7 +47,7 @@ h3 {
     max-width: 100%;
     box-sizing: border-box;
     overflow: hidden; /* prevent content from overflowing */
-	align-items: center; /* vertically center content */
+    align-items: flex-start; /* vertically center content */
 }
 
 /* Profile Aside style */
