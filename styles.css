@@ -131,9 +131,9 @@ a:hover {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-indent: 20px;
     background-color: #f0f8ff;
     padding: 15px;
+    padding-left: 35px;
     border-radius: 10px;
     overflow-x: auto;
     font-family: Consolas, "Courier New", monospace;
