@@ -38,28 +38,6 @@ h3 {
     font-weight: bold;
 }
 
-.publication {
-    list-style-position: outside;   /* creates hanging bullets */
-    list-style-type: none;   /* removes bullet points */
-    padding-left: 0;         /* removes default padding */
-}
-
-.publication li {
-    margin-bottom: 20px;            /* extra space between bullet points */
-}
-
-.code-container {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #f0f8ff;
-    padding: 15px;
-    border-radius: 10px;
-    overflow-x: auto;
-    font-family: Consolas, "Courier New", monospace;
-    color: #333;
-}
-
 /* Profile container */
 .profile-container {
     margin: auto;
@@ -147,6 +125,28 @@ a {
 a:hover {
     text-decoration: underline;
     color: #2d4373;
+}
+
+.code-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: Consolas, "Courier New", monospace;
+    color: #333;
+}
+
+.publication {
+    list-style-position: outside;   /* creates hanging bullets */
+    list-style-type: none;   /* removes bullet points */
+    padding-left: 0;         /* removes default padding */
+}
+
+.publication li {
+    margin-bottom: 20px;            /* extra space between bullet points */
 }
 
 /* Container with flexbox */
