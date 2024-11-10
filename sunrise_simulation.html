@@ -30,8 +30,9 @@
 	    <li><a href="#profile">Introduction</a></li>
 	    <li><a href="#background">Background</a></li>
 	    <li><a href="#hardware_setup">Hardware Setup</a></li>
-            <li><a href="#python_code">Python Code</a></li>
-	    <li><a href="#schedule_execution">Schedule Execution</a></li>
+      <li><a href="#python_code">Python Code</a></li>
+	    <li><a href="#raspberry_setup">Raspberry Setup</a></li>
+      <li><a href="#disclamer">Disclamer</a>
     </ul>
 </nav>  
 
@@ -60,7 +61,7 @@
 		MOSFETs, a breadboard, and other components. Fortunately, there are experts who have already figured out what parts are needed, how to calculate their properties, 
 		and even compiled shopping lists with links to purchase them.</p>
 	<p>For everything hardware-related, I recommend checking out an online source like <a href="https://dordnung.de/raspberrypi-ledstrip/en" target="_blank">David Ordnung’s</a> 
-	        blog (following the instructions provided is at your own risk.), which covers how to set up an LED strip with a Raspberry Pi.</p>
+	        blog, which covers how to set up an LED strip with a Raspberry Pi.</p>
     </article>
 
     <article>	
@@ -152,8 +153,9 @@ if __name__ == "__main__":
     </article>	
 
     <article>
-    <h1 id="schedule_execution">Schedule Execution</h1>    
-    <p>With the working script, you now only need to tell your Raspberry Pi to run the script on your dream schedule, e.g., every Saturday and Sunday at 10 AM. I use cron to achieve this:</p>
+    <h1 id="raspberry_setup">Raspberry Setup</h1>    
+    <p>With the working script, you now only need to tell your Raspberry Pi to run the script on your dream schedule, e.g., every Saturday and Sunday at 10 AM. 
+      I use cron to achieve this:</p>
     <div class="code-container">
 	<pre><code>
 crontab -e
@@ -163,7 +165,12 @@ crontab -e
     </article>
     
     <article>
-      <h1 id="disclamer">Disclamer</h1>
+    <h1 id="disclamer">Disclamer</h1>
+    <p>If you choose to follow my instructions, use my code for the Raspberry Pi sunrise simulation project, or follow linked content, please do so at your own risk. 
+       I am not responsible for any damages to equipment, injury, or any other negative outcomes that may result from the use of code and information provided, or 
+       external content. It is your responsibility to ensure proper safety precautions, adhere to electrical and hardware guidelines, and understand the risks involved 
+       when working with electronics and coding projects.</p>
+    </article>    
 	
 </div>
     
