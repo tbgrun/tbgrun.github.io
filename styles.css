@@ -141,6 +141,7 @@ a:hover {
 }
 
 .publication {
+    margin-top: 20px;
     list-style-position: outside;   /* creates hanging bullets */
     list-style-type: none;   /* removes bullet points */
     padding-left: 0;         /* removes default padding */
