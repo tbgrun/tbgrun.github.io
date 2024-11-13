@@ -234,7 +234,7 @@ input, textarea {
 button {
     padding: 10px;
     background-color: #c9e7ff;
-    color: white;
+    color: #333;
     border: none;
     border-radius: 4px;
     cursor: pointer;
