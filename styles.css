@@ -222,7 +222,7 @@ hr.solid {
 
 label, input, textarea, button {
     display: block;
-    width: 100%;
+    width: calc(100% - 16px);
     margin-bottom: 10px;
 }
 
