@@ -224,7 +224,7 @@ label, input, textarea, button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    
+    box-sizing: border-box;
 }
 
 input, textarea {
