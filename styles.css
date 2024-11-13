@@ -233,14 +233,15 @@ input, textarea {
 
 button {
     padding: 10px;
-    background-color: #c9e7ff;
-    color: #333;
+    background-color: #333;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
+    color: #c9e7ff;	
     background-color: #575757;
 }
 
