@@ -211,8 +211,9 @@ hr.solid {
 }
 
 #contact-form {
-    width: 33.33%; /* One-third of the screen width */
-    margin: 0 auto; /* Centers the form */
+    width: 33.33%;
+    margin: 0 auto;
+    background-color: #c9e7ff
     padding: 20px;
     border: 1px solid #333;
     border-radius: 5px; 
