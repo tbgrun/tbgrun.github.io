@@ -212,8 +212,8 @@ hr.solid {
 
 button {
     padding: 5px 10px;
-    background-color: #333;
-    color: white;
+    background-color: #f0f8ff;
+    color: #333;
     border: none;
     border-radius: 5px;
     display: inline-block;
@@ -224,7 +224,7 @@ button {
 button:hover {
     color: #c9e7ff;	
     background-color: #575757;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Footer style */
