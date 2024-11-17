@@ -234,6 +234,13 @@ button:hover {
     vertical-align: middle;
 }
 
+/* Span style for header image */
+.provided-by {
+  font-size: 0.8em;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
 /* Footer style */
 .footer {
     background-color: #333;
