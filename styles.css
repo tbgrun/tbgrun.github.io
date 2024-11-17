@@ -227,6 +227,12 @@ button:hover {
     text-decoration: none;
 }
 
+/* Image next to header */
+.image-header img {
+  height: 1.5em;
+  width: auto;
+}
+
 /* Footer style */
 .footer {
     background-color: #333;
