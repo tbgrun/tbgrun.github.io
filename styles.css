@@ -238,7 +238,7 @@ button:hover {
 .provided-by {
   font-size: 0.5em;
   font-weight: normal;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 /* Footer style */
