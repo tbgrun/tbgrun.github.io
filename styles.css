@@ -229,7 +229,7 @@ button:hover {
 
 /* Inline image */
 .inline-image img {
-  height: 1em;
+  height: 1.5em;
   width: auto;
   vertical-align: middle;
 }
