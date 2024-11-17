@@ -4,7 +4,7 @@
     <meta name="keywords" content="tbgrun, tobias b. grun, data science, data analytics, data engineering, statistics">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentiment Analysis Amazon</title>
+    <title>NLP Sentiment Analysis</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/images/icon.ico" alt="icon" type="image/x-icon"/>
@@ -13,13 +13,13 @@
 <body>
 <div class="profile-container">
    <aside class="profile-aside">
-       <img src="assets/images/sites/sentiment_analysis_amazon/wordcloud.png" alt="Sentiment Analysis of Amazon Product Reviews" class="profile-image" id="profile"> 
+       <img src="assets/images/sites/nlp_sentiment_analysis/wordcloud.png" alt="NLP Sentiment Analysis" class="profile-image" id="profile"> 
    </aside>
   <section>
-     <h1 id="overview">Sentiment Analysis of Amazon Product Reviews</h1>
+     <h1 id="overview">NLP Sentiment Analysis of Yelp Reviews</h1>
      <p>Sentiment Analysis uses Natural Language Processing (NLP) techniques to transform unstructured textual data into structured data on user opinions. 
-	     Reviews are then classified into positive, negative, or neutral to provide an understanding of the products. The process involves text preprocessing, 
-	     feature extraction, and computational modeling to interpret sentiment patterns. Sentiment analysis supports informed decision-making and customer-focus.</p>
+	     Reviews are then classified into positive, negative, or neutral to provide an understanding of restaurant ratings. The process involves text preprocessing, 
+	     feature extraction, and computational modeling to interpret sentiment patterns. Sentiment analysis supports informed decision-making for service improvements based on customer ratings.</p>
   </section>
 </div>
     
@@ -43,8 +43,8 @@
 	
     <article>
         <h1 id="introduction">Introduction</h1>    
-        <p>The project focuses on sentiment analysis of Amazon product reviews to obtain insights from customer feedback. The analysis will be conducted using a dataset comprising 
-		textual reviews, ratings, and relevant metadata from diverse product categories. The primary objective is to classify reviews based on their sentiment into positive, 
+        <p>The project focuses on sentiment analysis of Yelp reviews to obtain insights from customer feedback. The analysis will be conducted using a dataset comprising 
+		textual reviews, ratings, and relevant metadata from restaurants. The primary objective is to classify reviews based on their sentiment into positive, 
 		negative, or neutral reviews.<br>
                 The project includes data acquisition, preprocessing, cleaning of textual data, feature extraction, model building using machine learning or deep learning algorithms, 
 		model evaluation, and interpretation of results. Techniques such as tokenization, stop-word removal, stemming, and vectorization will be used to prepare the data. 
@@ -54,10 +54,7 @@
 
     <article>
         <h1 id="data">Data</h1>    
-        <p>In this project, I am using product review data provided by Amazon through the Amazon S3 service. While web scraping could be an effective method for gathering this data, 
-	    it is essential to adhere to Amazon's terms of service, which prohibit scraping without prior permission. To comply with both ethical and legal standards, I have 
-	    opted to use Amazon's publicly available data, ensuring that all data usage remains within the allowed guidelines. This approach also offers practical benefits, such 
-	    as ensuring data consistency and maintaining reproducibility throughout the project.</p>
+        <p>In this project, I am using customer review data provided by <a href="https://www.yelp.com" target="_blank">Yelp</a> through the Yelp Fusion API.</p>
         <button onclick="window.location.href='assets/analyses/sentiment_analysis_amazon/sentiment_analysis_amazon.csv';">Download Data</button>
     </article> 
 
