@@ -229,6 +229,8 @@ button:hover {
 
 /* Inline image */
 .inline-image img {
+    height: 1em;
+    width: auto;
     vertical-align: middle;
 }
 
