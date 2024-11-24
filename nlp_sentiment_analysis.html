@@ -58,12 +58,50 @@
     
     <article>
         <h1 id="scenario">Scenario (fictitious)</h1>    
-        <p><a href="assets/images/sites/nlp_sentiment_analysis/persona.png" alt="Persona description" class="openModal" id="modal-content-full">Lorena Castillo</a> is the new Regional Manager for First Watch Restaurants in Florida. After taking over the Florida branches from her predecessor, she discovered 
+        <p><a href="assets/images/sites/nlp_sentiment_analysis/persona.png" alt="Persona description" class="openModal">Lorena Castillo</a> is the new Regional Manager for First Watch Restaurants in Florida. After taking over the Florida branches from her predecessor, she discovered 
             that the restaurant health documentation was inadequate and customer and employee satisfaction analyses were outdated. To develop a meaningful strategy, she 
             first needed a clear overview of the current status of the restaurants under her management. While reviewing numerous online reviews, she quickly became 
             overwhelmed by the sheer volume and lack of structure. Lorena decided to outsource the analysis to a reliable service provider. Given the straightforward nature 
             of the project and the need for quick results, she reached out to five consulting firms.</p>
         <p>As a result of my clear, transparent, and problem-focused proposal, Lorena awarded the contract to my firm.</p>
+        
+        <!-- Modal definition -->
+        <div id="pdfModal" class="modal">
+         <div class="modal-content-full">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="Certification Image">
+            </div>
+        </div>
+
+        <script>
+            var modal = document.getElementById("pdfModal");
+            var modalImage = document.getElementById("modalImage");
+          var links = document.getElementsByClassName("openModal");
+           var span = document.getElementsByClassName("close")[0];
+
+           // Loop through all links with the class "openModal"
+           for (var i = 0; i < links.length; i++) {
+               links[i].onclick = function(event) {
+                  event.preventDefault(); // Prevent default link behavior
+                  modal.style.display = "block";
+                  modalImage.src = this.href; // Set image src to the link's href
+              }
+          }
+
+           // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+              modalImage.src = ""; // Clear image content
+          }
+
+         // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+             if (event.target == modal) {
+                 modal.style.display = "none";
+                 modalImage.src = ""; // Clear image content
+             }
+         }
+        </script>
     </article>
 
     <article>
