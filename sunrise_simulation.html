@@ -43,10 +43,10 @@
 		dark, and utterly committed to making weekend mornings an exercise in sheer willpower. More often than not, it’s that obnoxious alarm that shocks you awake, 
 		leaving you to wonder why you bothered setting it in the first place.</p>
 	<p>I stumbled across alarm clocks designed to wake you up with a blend of light and sound. The concept of gradually increasing brightness sounded dreamy — until 
-		I tried it and discovered these lights barely rivaled a dim nightlight. That was when the thought hit me: “How hard can it really be to build my own sunrise 
-		simulator?” Not only would it brighten our mornings, but it could also serve as a little project to survive the hostile season.</p>
-	<p>After some research, I came to the conclusion that a Raspberry Pi would be the best option to kickstart my project. I had never worked with a single-board computer 
-		before, neither did I configur a hardwired LED setup to it. But hey, stepping out of the scripting-comfort zone is half the fun I thought.</p>
+		I tried it and discovered these lights barely rivaled a dim nightlight. That was when the idea of building my own sunrise 
+		simulator came to me. Not only would it brighten our mornings, but it could also serve as a little project to survive the hostile German winter.</p>
+	<p>After some research, I came to the conclusion that Raspberry Pi would be the best option to kickstart my project. I had never worked with a single-board computer 
+		before, neither had I ever configured a hardwired LED setup. But hey, stepping out of the scripting comfort zone is half the fun I thought!</p>
     </article>
 
     <article>
@@ -57,7 +57,7 @@
 		regulating current, LEDs are quickly turned on and off. The longer the LED is off, the dimmer it appears. This effect is called Pulse Width Modulation (PWM). 
 		Therefore, it’s essential to find the pins on the Raspberry Pi that natively support PWM for this setup.</p>
 	<p>Once you have that figured out, the next question is how much power the Raspberry Pi's pins can supply, and whether that’s enough for a power-hungry LED strip. 
-		The answer, according to most sources, is no. This is where the setup enters a completely different realm beyond simple scripting and wiring. We now need 
+		The answer according to most sources is "no". This is where the setup enters a completely different realm beyond simple scripting and wiring. We now need 
 		MOSFETs, a breadboard, and other components. Fortunately, there are experts who have already figured out what parts are needed, how to calculate their properties, 
 		and even compiled shopping lists with links to purchase them.</p>
 	<p>For everything hardware-related, I recommend checking out an online source like <a href="https://dordnung.de/raspberrypi-ledstrip/en" target="_blank">David Ordnung’s</a> 
@@ -166,7 +166,7 @@ crontab -e
     
     <article>
     <h1 id="disclaimer">Disclaimer</h1>
-    <p>If you choose to follow my instructions, use my code for the Raspberry Pi sunrise simulation project, or follow linked content, please do so at your own risk. 
+    <p>If you choose to follow my instructions, use my code for the Raspberry Pi sunrise simulation project, or follow linked content and please do so at your own risk. 
        I am not responsible for any damages to equipment, injury, or any other negative outcomes that may result from the use of code and information provided, or 
        external content. It is your responsibility to ensure proper safety precautions, adhere to electrical and hardware guidelines, and understand the risks involved 
        when working with electronics and coding projects.</p>
